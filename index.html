@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptography Club</title>
+    <link rel="icon" href="Crypto.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cryptography Club</h1>
+    </header>
+    <main>
+      <section id="operations-panel">
+        <h2>Available Operations</h2>
+        <ul id="operations-list">
+          <li data-operation="base64Encode">Base64 Encode</li>
+          <li data-operation="base64Decode">Base64 Decode</li>
+          <li data-operation="urlEncode">URL Encode</li>
+          <li data-operation="urlDecode">URL Decode</li>
+          <li data-operation="md5Hash">MD5 Hash</li>
+          <li data-operation="sha256Hash">SHA-256 Hash</li>
+          <li data-operation="rot13">ROT13</li>
+          <li data-operation="caesarCipher">Caesar Cipher</li>
+          <li data-operation="xorCipher">XOR Cipher</li>
+          <li data-operation="aesEncrypt">AES Encryption</li>
+          <li data-operation="aesDecrypt">AES Decryption</li>
+        </ul>
+      </section>
+      <section id="pipeline">
+        <h2>Pipeline</h2>
+        <ul id="pipeline-operations">
+          <!-- User-added operations will appear here -->
+        </ul>
+      </section>
+      <section id="io-panel">
+        <textarea
+          id="input-data"
+          placeholder="Enter your input here"
+        ></textarea>
+        <textarea
+          id="output-data"
+          placeholder="Output will appear here"
+          readonly
+        ></textarea>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
